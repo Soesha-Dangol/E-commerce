@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<script src="myindex.js"></script>
+
+<style>
+.outer{
+margin: 50px 100px;
+border:1px solid red;
+border-radius: 20px 0px 20px 0px;
+height: 600px;
+padding:10px;
+}
+.header{
+text-align: center;
+border:1px solid black;
+height:50px;
+padding: 5px;
+border-radius: 20px 0px 0px 0px;
+background-color: black;
+}
+.sidebar{
+float:left;
+text-align: center;
+width: 150px;
+border:1px outset black;
+height:450px;
+margin-top: 5px;
+margin-right:400px;
+}
+.sidebar__category {
+ margin-bottom: 1px;
+ border-radius: 20px 0px 20px 0px;
+ overflow: hidden;
+ padding: 15px;
+ border: 1px solid;
+ display: block;
+ border-left: 0px;
+ border-right: 0px;
+ }
+ .sidebar__category:hover{
+ border-top: 3px solid red;
+ margin-bottom: 1px;
+ border-radius: 20px 0px 20px 0px;
+ overflow: hidden;
+ padding: 15px;
+ }
+.mainbody{
+border:1px solid black;
+margin-top: 5px;
+height:450px;
+margin-left:157px;
+}
+.footer{
+border:1px solid black;
+margin-top:270px;
+height:72px;
+border-radius: 0px 0px 20px 0px;
+position: relative;
+}
+#logo{
+ font-family: 'Sofia';
+ font-size: 40px;
+ margin-top: -10px;
+}
+.mainbody{
+ background-image: url(img/painbb.jpg);
+ width: 1300px;
+ height: 175px;
+ margin-left: 170px;
+ margin-top: 20px;
+}
+.mainbody:hover{
+ background-image: url(img/pain11.png);
+ width: 1300px;
+ height: 175px;
+ margin-left: 170px;
+ margin-top: 20px;
+}
+.sidebar__news {
+text-align: center;
+width: 150px;
+border:1px outset black;
+height:450px;
+margin-top: 0px;
+margin-right:400px;
+}
+</style>
+</head>
+
+<body>
+<div class="outer">
+<div class="header">
+ <div class="col-lg-4">
+ <img src="logo2.png" style="height:50px; width:100px; float:left;">
+ </div>
+ <div class="col-lg-4">
+ <p id="logo" ><font color="orange">ShopHere.com</font></p>
+ </div>
+</div>
+<div class="sidebar">
+ <div class="sidebar__category">Electronics</div>
+ <div class="sidebar__category">Health & Beauty</div>
+ <div class="sidebar__category">Men's Fashion</div>
+ <div class="sidebar__category">Women's Fashion</div>
+ <div class="sidebar__category">Sports</div>
+ <div class="sidebar__category">Groceries</div>
+</div>
+<div class="mainbody">
+</div>
+<div class="footer"></div>
+<div>
+<h1 class="sidebar__news">Hot Deals!</h1>
+<p id="sidebar__card">All of our products are on discount!</p>
+
+<button onclick="readMore()" id="details">Read More</button>
+</div>
+</div>
+</body>
+</html>
+
